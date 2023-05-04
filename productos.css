@@ -1,0 +1,162 @@
+/************HEADER**************/
+
+header{
+	background-color: #bbb ;
+	padding: 20px 0;
+	/*20 para top and bottom y 0 para los laterales*/
+}
+
+.caja{
+	width: 940px;
+	position: relative;/*Posicion relativa a la posicion absoluta
+	del "nav" definida anteriormente*/
+	margin: 0 auto;/*0 a top y calcula automatica a todos los
+	demas bordes*/
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;/*aqui se logra que cada elementos de 
+	la lista se ajuste a su tamaño no a tamaño bloque*/
+	margin: 0 0 0 15px;
+	/*top right abajo left*/
+}
+
+nav a{
+	text-transform: uppercase;/*mayusculas*/
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+
+
+/******************END HEADER******************/
+
+
+
+
+/************************MAIN*************************/
+
+.productos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.productos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	/*background: #cccccc;*//*este nos ayuda para poder encaminarnos al ver
+	como estamos programando los espacios*/
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	/*Aqui cada elemento de la lista li tiene la posiblidad de tomar un 30% del total
+	que son 940 px, sin embargo cuando añadimos un borde interno "padding"
+	se le agregan 20 px mas al 30% lo cual mandaria si o si algun elemento de la lista
+	o "li" hacia abajo para que esto no suceda se implemento el box-sizing
+	para que el borde de la caja interno que excede sea contabilizado dentro del
+	del 30% disponible, es como si desde un principio hubiera estado alli 
+	Entiendo que por ello se llama "box-sizing" porque es el tamaño de la caja con parametro
+	borde.*/
+
+	border: 2px solid #000;
+	/*border-color: #cccccc;
+	border-width: 2px;
+	border-style: solid;*/
+
+	/*border-top-left-radius: 10px ;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 4px ;
+	border-radius: 10px 25px 40px 50px;
+	*/
+	border-radius:10px ;
+}
+
+
+.productos li:hover{
+	border-color: #c78c19;
+}
+
+.productos li:active{
+	border-color: #088c19;
+}
+
+.productos h2{
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+
+.productos li:hover h2{/*no dice que en cualquier espacio de nuestro li
+por ello el hover tu vas a a plicar solamente una funcion a la tag h2 no a otra parte solo h2
+la siguiente instruccion*/
+	font-size: 33px;
+}
+
+
+.producto-descripcion{
+	font-size: 18px;
+}
+
+.producto-precio{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+/************************ENDMAIN*************************/
+
+
+
+
+/*********************FOOTER*********************/
+
+footer{
+	text-align: center;
+	background: url(imagenes/bg.jpg);
+	padding: 40px;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************END FOOTER*******************/
